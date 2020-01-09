@@ -17,3 +17,5 @@ let incr = 10,
 console.log(++incr);
 console.log(--decr);
 let string = 'string';
+
+let isChecked;
