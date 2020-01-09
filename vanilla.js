@@ -1,21 +1,21 @@
 'use strict';
 
-// const myName = 'Sasha';
+let money = prompt('Ваш бюджет на месяц?', '');
+let time = prompt('Введите дату в формате YYYY-MM-DD', '');
+let staff = prompt('Введите обязательную статью расходов в этом месяце', '');
+let cost = prompt('Во сколько обойдется?', '');
 
-// let sym = Symbol();
+let appData = {
+  butjet: money,
+  timeData: time,
+  expenses: {},
+  optionalExpenses: {},
+  income: [],
+  savings: false
+}
 
-// console.log(sym);
+appData.expenses[staff] = cost;
 
-// //alert('hello world!');
+console.log(appData);
 
-// confirm('how you do');
-
-let incr = 10,
-  decr = 10;
-
-
-console.log(++incr);
-console.log(--decr);
-let string = 'string';
-
-let isChecked;
+alert(appData.butjet / 30);
